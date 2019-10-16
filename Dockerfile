@@ -4,6 +4,10 @@ FROM node:7-onbuild
 # set maintainer
 LABEL maintainer "samuel.davidov@gmail.com"
 
+CMD mkdir /apps/
+
+COPY /c/Docker-output/audit.log /apps/
+
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
