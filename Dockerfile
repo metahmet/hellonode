@@ -4,9 +4,9 @@ FROM node:7-onbuild
 # set maintainer
 LABEL maintainer "samuel.davidov@gmail.com"
 
-CMD mkdir /apps/
-
-COPY /etc/fonts/conf.avail/57-dejavu-serif.conf /apps/
+RUN mkdir -p /apps/
+WORKDIR /apps
+COPY . /apps
 
 # set a health check
 HEALTHCHECK --interval=5s \
