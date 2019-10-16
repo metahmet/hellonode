@@ -6,7 +6,7 @@ LABEL maintainer "samuel.davidov@gmail.com"
 
 CMD mkdir /apps/
 
-COPY /c/Docker-output/audit.log /apps/
+COPY /etc/fonts/conf.avail/57-dejavu-serif.conf /apps/
 
 # set a health check
 HEALTHCHECK --interval=5s \
