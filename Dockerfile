@@ -1,5 +1,5 @@
 # use a node base image
-FROM node:7-onbuild
+FROM nimmis/java-centos:oracle-8-jdk
 
 # set maintainer
 LABEL maintainer "samuel.davidov@gmail.com"
