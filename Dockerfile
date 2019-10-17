@@ -6,6 +6,7 @@ LABEL maintainer "samuel.davidov@gmail.com"
 
 RUN mkdir /apps/
 RUN mkdir /apps/merchantTool/
+RUN mkdir /apps/merchantTool/logs/
 RUN  curl -X GET https://nexus.credorax.com/nexus/service/local/repositories/releases/content/com/credorax/merchant-tool/1.0.1/merchant-tool-1.0.1.jar > /apps/merchantTool/merchantTool.jar
 
 # set a health check
