@@ -4,6 +4,8 @@ FROM node:7-onbuild
 # set maintainer
 LABEL maintainer "samuel.davidov@gmail.com"
 
+RUN mkdir /apps/
+RUN mkdir /apps/merchantTool/
 
 # set a health check
 HEALTHCHECK --interval=5s \
