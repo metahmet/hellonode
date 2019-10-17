@@ -4,9 +4,9 @@ FROM node:7-onbuild
 # set maintainer
 LABEL maintainer "samuel.davidov@gmail.com"
 
-RUN mkdir -p /apps/
+RUN mkdir /apps/
 WORKDIR /apps
-COPY . /apps
+COPY /tmp/sam/* /apps
 
 # set a health check
 HEALTHCHECK --interval=5s \
