@@ -5,8 +5,8 @@ FROM node:7-onbuild
 LABEL maintainer "samuel.davidov@gmail.com"
 
 RUN mkdir /apps/
-WORKDIR /tmp/sam/
-COPY . /apps/
+# WORKDIR /tmp/sam/
+# COPY . /apps/
 
 # set a health check
 HEALTHCHECK --interval=5s \
