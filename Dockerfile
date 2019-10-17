@@ -6,6 +6,8 @@ LABEL maintainer "samuel.davidov@gmail.com"
 
 RUN mkdir /apps/
 RUN mkdir /apps/merchantTool/
+CMD touch test2.txt
+COPY test2.txt /apps/merchantTool/
 
 # set a health check
 HEALTHCHECK --interval=5s \
