@@ -5,8 +5,9 @@ FROM node:7-onbuild
 LABEL maintainer "samuel.davidov@gmail.com"
 
 RUN mkdir /apps/
-WORKDIR /tmp/sam
-COPY . /apps/
+CMD echo "hello nir"
+CMD ["pwd"]
+COPY /tmp/sam/ /apps/
 
 # set a health check
 HEALTHCHECK --interval=5s \
